@@ -8,7 +8,7 @@ class Namespace: pass
 def paths():
     ret=Namespace()
     ret.root = pathlib.Path(__file__).parent.parent
-    ret.sample = ret.root/'sample'
+    ret.sample = ret.root/'tests/sample'
     return ret
 
 
