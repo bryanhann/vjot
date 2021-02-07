@@ -3,7 +3,7 @@ import os
 
 def unique_sorted(seq): return sorted(list(set(seq)))
 def stamp4path(path): return path.name.split('.')[0]
-def stamps4path(path): return unique_sorted(map(stamp4path, path.glob('*')))
+def stamps4path(path): return unique_sorted(map(stamp4path, path.glob('*T*')))
 
 
 def test_stamps4path(SAMPLE_STAMPS,paths):
