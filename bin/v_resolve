@@ -1,0 +1,10 @@
+stamp=$1
+path=$( ./stamp-find \
+    --root ${VJOT_RAW} \
+    --glob '*.mp3' \
+    --unique \
+    --exact \
+    $1
+)
+
+echo $path

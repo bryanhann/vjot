@@ -1,0 +1,6 @@
+[ "$0" == "./workon" ] || { echo 'try ./workon' ; exit; }
+[ -f .worklock ] && { echo 'remove .worklock first'; exit; }
+touch .worklock
+export PATH=$PATH:$PWD/bin
+$SHELL
+rm .worklock
