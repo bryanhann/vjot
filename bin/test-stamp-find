@@ -1,1 +1,0 @@
-./stamp-find --root /Users/bch/.__rsync/rsync.ws852 --glob '*.mp3' 20190415T182504 --unique --exact

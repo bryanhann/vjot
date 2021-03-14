@@ -1,6 +1,5 @@
-[ "$0" == "./workon" ] || { echo 'try ./workon' ; exit; }
-[ -f .worklock ] && { echo 'remove .worklock first'; exit; }
-touch .worklock
-export PATH=$PATH:$PWD/bin
-$SHELL
-rm .worklock
+export VJOT_BIN=$PWD/bin
+export PATH=${PATH}:$VJOT_BIN
+export VJOT_SAMPLE_FILE=$(vjot-archive)/20180204T115714.{serial:0067}.ws852.mp3
+export VJOT_SAMPLE_STAMP=20180204T115714
+[ "$HOSTNAME" = "pi7" ] && VJOT_RAW=$(vjot-archive)

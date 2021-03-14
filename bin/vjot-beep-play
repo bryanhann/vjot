@@ -1,6 +1,0 @@
-[ "$1" == "--recur" ] || $0 --recur $1 > /dev/null 2> /dev/null &
-[ "$1" == "--recur" ] || exit
-
-killall -c afplay
-afplay $2 > /dev/null 2> /dev/null
-say -r1000 beep

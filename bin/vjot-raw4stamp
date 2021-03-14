@@ -1,3 +1,0 @@
-for file in $VJOT_RAW/$1* ; do
-    echo $file
-done

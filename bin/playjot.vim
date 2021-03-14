@@ -9,7 +9,9 @@ endfunction
 function PlayJot()
     let stamp = GetFirstWordOnLine()
     let file = stamp . ".ws852.mp3"
-    silent execute "!safe-afplay " . file . " &"
+    execute "!vjot-play-name " . file . " &"
+    " silent execute "!vjot-play-name " . file . " &"
+    " silent execute "!safe-afplay " . file . " &"
     " #silent execute "!./vjot.play " . file . " &"
 endfunction
 

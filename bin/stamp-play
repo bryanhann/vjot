@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-stamp=$1
-mp3=$(./mp3path4stamp $stamp)
-echo $mp3
-./vjot-beep-play  $mp3
