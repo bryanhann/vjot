@@ -1,0 +1,11 @@
+echo [$0] [$*]
+ROOT=$(mydts uniq -r MYENV_VJOT_DEPO)
+count=0
+for path in $(find $ROOT -name $1*mp3); do
+    hit=$path
+    count=$(( $count + 1  ))
+done
+
+[ $count = 1 ] && {
+    afplay $hit
+}
